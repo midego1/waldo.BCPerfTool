@@ -27,7 +27,8 @@
             "sessionId": 140,
             "userId": "waldo",
             "breakOnNext": "WebClient",
-            "executionContext": "Profile"
+            "executionContext": "Profile",
+            "profilingType": "Instrumentation"
         },
         {
             "name": "LocalDocker: bccurrent",
