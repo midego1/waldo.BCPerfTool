@@ -29,7 +29,7 @@ page 62111 "DetailsPerLine Chart WPT"
                     UpdateData();
                 end;
             }
-            usercontrol(Chart; "Microsoft.Dynamics.Nav.Client.BusinessChart")
+            usercontrol(Chart; System.Integration.BusinessChart)
             {
                 ApplicationArea = All;
 
@@ -69,7 +69,7 @@ page 62111 "DetailsPerLine Chart WPT"
             exit;
 
         ChartHelper.UpdateData(BusinessChartBuffer, Rec, ChartMeasure);
-        BusinessChartBuffer.Update(CurrPage.Chart);
+        BusinessChartBuffer.UpdateChart(CurrPage.Chart);
     end;
 
 }

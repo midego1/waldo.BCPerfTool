@@ -31,7 +31,7 @@ page 62110 "AveragePerLine Chart WPT"
                 end;
             }
 
-            usercontrol(Chart; "Microsoft.Dynamics.Nav.Client.BusinessChart")
+            usercontrol(Chart; System.Integration.BusinessChart)
             {
                 ApplicationArea = All;
 
@@ -71,7 +71,8 @@ page 62110 "AveragePerLine Chart WPT"
             exit;
 
         ChartHelper.UpdateData(Rec, SuiteHeader, ChartMeasure);
-        Rec.Update(CurrPage.Chart);
+        // Rec.Update(CurrPage.Chart);
+        Rec.UpdateChart(CurrPage.chart);
     end;
 
 }
